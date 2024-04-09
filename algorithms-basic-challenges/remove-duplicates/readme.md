@@ -17,6 +17,6 @@ Write a function called removeDuplicates that takes in an array and returns a ne
 # Example
 
 ```ts
-removeDuplicates([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+RemoveDuplicate([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 RemoveDuplicate([1, 1, 1, 1, 1, 'hello', 'hello', 4, 5, 6, 7, 8]); // [1,"hello",4,5,6,7,8]
 ```
