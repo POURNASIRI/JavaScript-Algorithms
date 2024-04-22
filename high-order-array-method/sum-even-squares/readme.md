@@ -6,13 +6,12 @@ Let's start off with a fairly simple challenge, but one that uses a few differen
 
 ## Function Signature
 
-/\*\*
-
-- Returns the sum of the squares of the even numbers in the array.
-- @param {number[]} numbers - The array of numbers.
-- @returns {number} - The sum of the squares of even numbers.
-  \*/
-  function sumOfEvenSquares(numbers: number[]): number
+/**
+ * Returns the sum of the squares of the even numbers in the array.
+ * @param {number[]} numbers - The array of numbers.
+ * @returns {number} - The sum of the squares of even numbers.
+ */
+function sumOfEvenSquares(numbers: number[]): number
 
 ## Examples
 
