@@ -17,15 +17,23 @@ function findMissingLetter(array) {
 
     
     //solution 2
-    const missingCharCode = array.reduce((missing, char) => {
-        const current = char.charCodeAt(0);
-        if (current - start > 1 && missing === null) {
-          missing = start + 1;
-        }
-        start = current;
-        return missing;
-      }, null);
-      return missingCharCode ? String.fromCharCode(missingCharCode) : '';
+    // const missingCharCode = array.reduce((missing, char) => {
+    //     const current = char.charCodeAt(0);
+    //     if (current - start > 1 && missing === null) {
+    //       missing = start + 1;
+    //     }
+    //     start = current;
+    //     return missing;
+    //   }, null);
+    //   return missingCharCode ? String.fromCharCode(missingCharCode) : '';
+
+
+    //solution 3
+
+    const charCode = array.map((char)=> char.charCodeAt(0))
+    const missingLetter = charCode.find((char,index)=> char + 1 !== charCode[index + 1])
+
+    return String.fromCharCode(missingLetter + 1)
 
 }
 
